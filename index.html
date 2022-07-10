@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html style="margin: 0; padding: 0; background-image: url(https://avatars.mds.yandex.net/i?id=8d60a96b5daab82e8bc72ca1c98b4e49_l-4028342-images-thumbs&n=33&w=729&h=1080&q=60); background-size: 120vw 120vh;background-repeat: no-repeat; background-position: top center; background-attachment: fixed;">
+<head>
+<meta charset="utf-8">
+<title>video</title>
+    <style>
+      td{
+        color: white;
+        font-size: 100px;
+        font-family: 'Playfair Display', serif;
+      }
+    </style>
+    <meta http-equiv="Refresh" content="3600" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0; width: 100vw; height: 100vh;">
+  <table style="border: 0; padding: 100px 300px 2000px 250px; height: 120vh; width: 120vw; background-image: url(https://avatars.mds.yandex.net/i?id=876bc440467f4bcef0e8a0032b5cb058-5238850-images-thumbs&n=13);background-size: 120vw 120vh; background-repeat: no-repeat; background-position: top center; background-attachment: fixed;">
+    <tr>
+      <td colspan="2">Мы вместе</td>
+    </tr>
+    <tr>
+      <td>Лет:</td>
+      <td><div id="i-1"></div></td>
+    </tr>
+    <tr>
+      <td>Месяцев:</td>
+      <td><div id="i-2"></div></td>
+    </tr>
+    <tr>
+      <td>Дней:</td>
+      <td><div id="i-3"></div></td>
+    </tr>
+  </table>
+  <script>
+    let b = new Date()
+    let a = new Date("2022-05-21T16:45")
+    let ch = b.getYear() - a.getYear()
+    let n = b.getMonth() - a.getMonth()
+    let d = b.getDate() - a.getDate()
+    if (n < 0){
+      n = n + 12;
+    }
+    if (b.getDate() < 21){
+      n = n - 1;
+    }
+    if (d < 0){
+      d = d + 28;
+    }
+document.getElementById("i-1").innerHTML = ch;
+document.getElementById("i-2").innerHTML = n;
+document.getElementById("i-3").innerHTML = d;
+   </script>
+<video style="width: 120vw; height: 120vh;" controls loop preload="auto" poster="https://drive.google.com/uc?export=view&id=1JW4TAacdakYG_1wZuKf38sP_0VtC6lSd" src="https://drive.google.com/uc?export=view&id=1IVm2YNdMSB5pKbMpDUiw5epT0ABnEJja"></video> 
+</body>
+</html>
