@@ -46,7 +46,15 @@
       n = n - 1;
     }
     if (d < 0){
-      d = d + 28;
+      if (b.getMonth() == 2){
+        d = 28 - 21 + b.getDate();
+      }
+      else if (b.getMonth() == 4 || b.getMonth() == 6 || b.getMonth() == 9 || b.getMonth() == 11){
+        d = 30 - 21 + b.getDate();
+      }
+      else{
+        d = 31 - 21 + b.getDate();
+      }
     }
 document.getElementById("i-1").innerHTML = ch;
 document.getElementById("i-2").innerHTML = n;
