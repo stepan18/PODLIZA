@@ -2,7 +2,7 @@
 <html style="margin: 0; padding: 0; background-image: url(https://avatars.mds.yandex.net/i?id=8d60a96b5daab82e8bc72ca1c98b4e49_l-4028342-images-thumbs&n=33&w=729&h=1080&q=60); background-size: 120vw 120vh;background-repeat: no-repeat; background-position: top center; background-attachment: fixed;">
 <head>
 <meta charset="utf-8">
-<title>video</title>
+<title>Подарочек на др❤️</title>
     <style>
       td{
         color: white;
@@ -36,6 +36,8 @@
       <td colspan="2">Некит хуесос</td>
     </tr>
   </table>
+  
+  <p><a style="padding: 20px; margin-left: 250px; position: absolute; top: 35vh; font-size: 150px; text-decoration: none; color: red; background-color: rgba(129,216,208, .6); border-radius: 70px;" href="#vid">Сюрприз❤️</a></p>
   <script>
     let b = new Date()
     let a = new Date("2022-05-21T16:45")
@@ -49,12 +51,20 @@
       n = n - 1;
     }
     if (d < 0){
-      d = d + 28;
+      if (b.getMonth() == 2){
+        d = 28 - 21 + b.getDate();
+      }
+      else if (b.getMonth() == 4 || b.getMonth() == 6 || b.getMonth() == 9 || b.getMonth() == 11){
+        d = 30 - 21 + b.getDate();
+      }
+      else{
+        d = 31 - 21 + b.getDate();
+      }
     }
 document.getElementById("i-1").innerHTML = ch;
 document.getElementById("i-2").innerHTML = n;
 document.getElementById("i-3").innerHTML = d;
    </script>
-<video style="width: 120vw; height: 120vh;" controls loop preload="auto" poster="https://drive.google.com/uc?export=view&id=1JW4TAacdakYG_1wZuKf38sP_0VtC6lSd" src="https://drive.google.com/uc?export=view&id=1IVm2YNdMSB5pKbMpDUiw5epT0ABnEJja"></video> 
+<video id="vid" style="width: 120vw; height: 120vh;" controls loop preload="auto" poster="https://drive.google.com/uc?export=view&id=1JW4TAacdakYG_1wZuKf38sP_0VtC6lSd" src="https://drive.google.com/uc?export=view&id=1IVm2YNdMSB5pKbMpDUiw5epT0ABnEJja"></video> 
 </body>
 </html>
