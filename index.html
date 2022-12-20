@@ -42,6 +42,7 @@
     let n = b.getMonth() - a.getMonth()
     let d = b.getDate() - a.getDate()
     if (n < 0){
+      ch = ch - 1;
       n = n + 12;
     }
     if (b.getDate() < 21){
